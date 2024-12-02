@@ -5,7 +5,7 @@ import datetime
 import os
 
     
-bot = telebot.TeleBot('7423815010:AAGUBTuIASMWyxB9BqGf30c6ABKGKuYNLh8')
+bot = telebot.TeleBot('6978866468:AAGLcR0qILP7EXlM6v90lQUkbdGRgkv2y2I')
 admin_id = ["6804992562"]
 
 
@@ -408,7 +408,7 @@ def handle_bgmi(message):
                 response = "𝗠𝗔𝗞𝗘 𝗦𝗨𝗥𝗘 𝗬𝗢𝗨 𝗛𝗔𝗩𝗘 𝗘𝗡𝗧𝗘𝗥𝗘𝗗 𝗧𝗛𝗘 𝗧𝗜𝗠𝗘 𝗨𝗡𝗗𝗘𝗥 𝟯𝟬𝟬 𝗦𝗘𝗖𝗢𝗡𝗗𝗦"
             else:
                 # Log the command (implement these functions as needed)
-                record_command_logs(user_id, '/attack3', target, port, time)
+                record_command_logs(user_id, '/attack', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)
 
@@ -452,3 +452,4 @@ while True:
         bot.polling(none_stop=True)
     except Exception as e:
         print(e)
+
